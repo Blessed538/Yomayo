@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import HomePage from './home/index'
-import About from './about-us.js/about-us'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import HomePage from "./home/index";
+import About from "./about-us.js/about-us";
+import Services from "./services";
 export default function Home() {
   return (
     <div>
@@ -13,11 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='w-screen w-full'>
-
-      <HomePage />
-      <About />
+      <main className="w-screen w-full">
+        <HomePage />
+        <About />
+        <Services />
       </main>
     </div>
-  )
+  );
 }
