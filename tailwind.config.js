@@ -5,10 +5,16 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xs: "380px",
       sm: "480px",
       md: "768px",
       lg: "976px",
       xl: "1440px",
+      // sm: "640px",
+      // md: "768px",
+      // lg: "1024px",
+      // xl: "1280px",
+      // "2xl": "1536px",
     },
     colors: {
       "gray-dark": "#273444",
@@ -38,6 +44,7 @@ module.exports = {
       "bg-team": "#F3F7FE",
       "text-team": "#181818",
       "team-member-title": "#000000",
+      "bg-footer": "#242424;",
     },
     content: {
       section: {},

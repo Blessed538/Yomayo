@@ -6,105 +6,48 @@ import Image from "next/image";
 const index = () => {
   return (
     <div>
-      <div className="flex flex-row w-full container max-w-full h-3/4">
-        <div className="basis-1/2 bg-background w-full max-w-md  mt-3 my-0 mx-auto space-y-top">
-          <div className="flex justify-between items-center">
-            <div className="text-link font-yomayo text-2xl">BayomAssociate</div>
-            <div className="items-center flex">
-              <div className="text-link font-yomayo mr-3 text-base">Home</div>
-              <div className="text-link font-yomayo text-base">Works</div>
+      <div className="w-full max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="mx-auto px-10">
+            <div className="flex  justify-between pt-5 items-center">
+              <div className="text-link font-yomayo text-2xl">
+                BayomAssociate
+              </div>
+              <div className="items-center flex">
+                <div className="text-link font-yomayo mr-3 text-base">Home</div>
+                <div className="text-link font-yomayo text-base">Works</div>
+              </div>
+            </div>
+            <div className="flex pt-24 flex-col justify-center">
+              <div className="sm:text-7xl lg:text-7xl text-6xl font-semibold mx-auto text-link font-yomayo">
+                Architects that design the future
+              </div>
+              <p className="text-sub-text sm:text-2xl text-3xl font-light not-italic mt-2 font-yomayo mb-3">
+                As an award wining architectural firm ,we have designed many
+                beautiful buildings across Africa
+              </p>
+              <div className="text-center mt-4 max-w-[50%] bg-btn-bg p-4 text-white">
+                Contact Us
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center">
-            <div className="text-7xl text-link font-yomayo">
-              Architects that design the future
-            </div>
-            <p className="text-sub-text text-lg font-light not-italic mt-2 font-yomayo mb-3">
-              As an award wining architectural firm ,we have designed many
-              beautiful buildings across Africa
-            </p>
-            <div className="text-center mt-4 max-w-[50%] bg-btn-bg p-4 text-white">
-              Contact Us
-            </div>
+          <div className="hidden lg:block">
+            <Image src={home} width={100} height={100} layout="responsive" />
           </div>
-        </div>
-        <div className="basis-1/2 bg-fixed h-full w-full bg-repeat-no">
-          <Image src={home} width={100} height={100} layout="responsive" />
         </div>
       </div>
-      <div className="w-full flex justify-between bg-company-logo items-center h-2/5 space-x-6 px-3 mt-1 p-4">
-        <Image
-          className=" pr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" pr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" pr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" pr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
-        <Image
-          className=" mr-2 h-2/4"
-          src={companyLogo}
-          width={90}
-          height={100}
-        />
+      <div className="md:flex grid-cols-3 bg-company-logo md:justify-between md:flex-row flex-col items-center px-12 p-4">
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
+        <Image src={companyLogo} width={100} height={100} />
       </div>
     </div>
   );

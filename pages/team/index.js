@@ -5,17 +5,21 @@ import ceo from "../../images/ceo.svg";
 const Team = () => {
   return (
     <div className="bg-bg-team">
-      <div className="mx-auto my-0 max-w-[90%] py-12 px-7">
-        <div className="flex items-start">
-          <h3 className="text-text-team font-sans text-5xl"> The Dream Team</h3>
+      <div className="mx-auto my-0 sm:max-w-[90%] lg:py-12 lg:px-7">
+        <div className="sm:flex sm:items-start">
+          <h3 className="text-text-team font-sans text-center mt-3 sm:text-5xl text-4xl ">
+            {" "}
+            The Dream Team
+          </h3>
         </div>
-        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-4 pt-5 pb-5 mt-4">
+        <div className="grid sm:gap-4 grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  sm:pt-5 pb-5 mt-4">
           <div className="grid">
             <Image
               src={ceo}
+              // layout="responsive"
               className="bg-blue bg-cover  inline bg-center bg-no-repeat"
             />
-            <div className="font-sans font-light text-team-member-title text-3xl">
+            <div className="font-sans font-light text-team-member-title text-2xl sm:text-3xl">
               DANIEL JUSTICE
             </div>
             <p className="font-sans font-light text-team-member-title text-3xl italic text-sm">
@@ -25,6 +29,7 @@ const Team = () => {
           <div className="grid">
             <Image
               src={simi}
+              // layout="responsive"
               className="bg-green bg-cover bg-center bg-no-repeat"
             />
             <div className="font-sans font-light text-team-member-title text-3xl">
@@ -37,6 +42,7 @@ const Team = () => {
           <div className="grid">
             <Image
               src={ceo}
+              // layout="responsive"
               className="bg-blue bg-cover bg-center bg-no-repeat"
             />
             <div className="font-sans font-light text-team-member-title text-3xl">
@@ -48,13 +54,14 @@ const Team = () => {
           </div>
           <div className="grid">
             <Image
+              // layout="responsive"
               src={ceo}
               className="bg-green bg-cover bg-center bg-no-repeat"
             />
             <div className="font-sans font-light text-team-member-title text-3xl">
               Adaobi Martins
             </div>
-            <p className="font-sans font-light text-team-member-title text-3xl italic text-sm">
+            <p className="font-sans font-light text-team-member-title  sm:text-3xl italic text-sm">
               Team Lead/ Civil Engineering
             </p>
           </div>

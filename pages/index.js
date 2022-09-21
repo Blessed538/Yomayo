@@ -6,7 +6,7 @@ import About from "./aboutUs/about-us";
 import Services from "./services";
 import Projects from "../pages/projects";
 import Team from "./team";
-
+import Footer from "./footer";
 export default function Home() {
   return (
     <div>
@@ -25,6 +25,7 @@ export default function Home() {
         <Services />
         <Projects />
         <Team />
+        <Footer />
       </main>
     </div>
   );
