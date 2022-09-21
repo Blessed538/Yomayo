@@ -32,6 +32,12 @@ module.exports = {
       "about-p": "#555555",
       "counter-color": "#111111",
       "bg-services": "#F3F7FE",
+      "service-header": "#1682F9",
+      "bg-projects": "#242424",
+      "view-all": "#1C2977",
+      "bg-team": "#F3F7FE",
+      "text-team": "#181818",
+      "team-member-title": "#000000",
     },
     content: {
       section: {},
@@ -49,6 +55,9 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      backgroundImage: {
+        hero: "url('../images/house.jpg')",
       },
     },
   },
