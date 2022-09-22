@@ -7,7 +7,7 @@ const Team = () => {
     <div className="bg-bg-team">
       <div className="mx-auto my-0 sm:max-w-[90%] lg:py-12 lg:px-7">
         <div className="sm:flex sm:items-start">
-          <h3 className="text-text-team font-sans text-center mt-3 sm:text-5xl text-4xl ">
+          <h3 className="text-text-team font-ortica text-center mt-3 sm:text-5xl text-4xl ">
             {" "}
             The Dream Team
           </h3>
@@ -19,10 +19,10 @@ const Team = () => {
               // layout="responsive"
               className="bg-blue bg-cover  inline bg-center bg-no-repeat"
             />
-            <div className="font-sans font-light text-team-member-title text-2xl sm:text-3xl">
+            <div className=" font-light text-team-member-title text-2xl sm:text-xl">
               DANIEL JUSTICE
             </div>
-            <p className="font-sans font-light text-team-member-title text-3xl italic text-sm">
+            <p className="font-aktiv font-light text-team-member-title text-3xl italic text-sm">
               Founder/ Ceo
             </p>
           </div>
@@ -32,10 +32,10 @@ const Team = () => {
               // layout="responsive"
               className="bg-green bg-cover bg-center bg-no-repeat"
             />
-            <div className="font-sans font-light text-team-member-title text-3xl">
+            <div className="font-light text-team-member-title text-xl">
               Simisola Folarin
             </div>
-            <p className="font-sans font-light text-team-member-title text-3xl italic text-sm">
+            <p className="font-aktiv font-light text-team-member-title text-xl italic text-sm">
               Principal Partner
             </p>
           </div>
@@ -45,10 +45,10 @@ const Team = () => {
               // layout="responsive"
               className="bg-blue bg-cover bg-center bg-no-repeat"
             />
-            <div className="font-sans font-light text-team-member-title text-3xl">
+            <div className="font-light text-team-member-title text-xl">
               Bode Thomas
             </div>
-            <p className="font-sans font-light text-team-member-title text-3xl italic text-sm">
+            <p className="font-aktiv font-light text-team-member-title text-xl italic text-sm">
               Team Lead/ Architect
             </p>
           </div>
@@ -58,10 +58,10 @@ const Team = () => {
               src={ceo}
               className="bg-green bg-cover bg-center bg-no-repeat"
             />
-            <div className="font-sans font-light text-team-member-title text-3xl">
+            <div className="font-light text-team-member-title text-xl">
               Adaobi Martins
             </div>
-            <p className="font-sans font-light text-team-member-title  sm:text-3xl italic text-sm">
+            <p className="font-aktiv font-light text-team-member-title  sm:text-xl italic text-sm">
               Team Lead/ Civil Engineering
             </p>
           </div>

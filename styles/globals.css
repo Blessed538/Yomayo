@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../public/AktivGroteskCorp-Light.ttf")
+  }
+
+  @font-face {
+    font-family: "Ortica";
+    src: url("../public/Sneaky-Times.otf")
+  }

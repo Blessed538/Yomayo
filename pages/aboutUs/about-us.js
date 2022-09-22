@@ -15,34 +15,34 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col lg:pl-8 py-7">
-          <div className="text-link font-yomayo lg:text-left text-center not-italic md:text-4xl">
+          <div className="text-link font-aktiv lg:text-left text-center not-italic md:text-4xl">
             About Us
           </div>
-          <div className="text-link mb-3 lg:text-left text-center my-5 font-yomayo not-italic text-2xl">
+          <div className="text-link mb-3 lg:text-left text-center my-5 font-aktiv not-italic text-2xl">
             BayomAssociate
           </div>
-          <p className="text-about-p not-italic font-yomayo sm:text-2xl sm:mb-3">
+          <p className="text-about-p not-italic font-aktiv sm:text-2xl sm:mb-3">
             BayomAssociates is an architectural and engineering firm based in
             Abuja, Nigeria established in 1993 . We are dedicated team of
             Architects, Quantity Surveyors, Structural & Civil engineers who
             genuinely care about your project{" "}
           </p>
           <div className="flex justify-between items-center mt-5">
-            <div className="">
+            <div className="font-aktiv">
               <div className="sm:text-4xl text-sm text-counter-color mb-1">
                 001+
               </div>
-              <p className="font-sans text-sm about-p not-italic">Projects</p>
+              <p className="font-ortica text-sm about-p not-italic">Projects</p>
             </div>
-            <div>
+            <div className="font-aktiv">
               <div className="sm:text-4xl text-counter-color mb-1">01</div>
-              <p className="font-sans about-p not-italic sm:text-lg">
+              <p className="font-ortica about-p not-italic sm:text-lg">
                 Years of Experience
               </p>
             </div>
-            <div>
+            <div className="font-aktiv">
               <div className="sm:text-4xl text-counter-color mb-1">01+</div>
-              <p className="font-sans about-p not-italic sm:text-lg">
+              <p className="font-ortica about-p not-italic sm:text-lg">
                 Professional Teams
               </p>
             </div>

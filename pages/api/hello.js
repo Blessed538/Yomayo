@@ -1,5 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// const { createClient } = require("contentful/dist/contentful.browser.min.js");
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+// export const ClientContentful = createClient({
+//   space: "sjwpoajwjci7",
+//   accessToken: "rwUNQcIvKWci8d-93FI4ch3ZehBt_IkKXgdp-hwBonk",
+// });

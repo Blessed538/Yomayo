@@ -10,11 +10,6 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1440px",
-      // sm: "640px",
-      // md: "768px",
-      // lg: "1024px",
-      // xl: "1280px",
-      // "2xl": "1536px",
     },
     colors: {
       "gray-dark": "#273444",
@@ -50,9 +45,8 @@ module.exports = {
       section: {},
     },
     fontFamily: {
-      sans: ["Ortica"],
-      serif: ["Merriweather", "serif"],
-      yomayo: ["Aktiv Grotesk Corp"],
+      ortica: ["Ortica"],
+      aktiv: ["Aktiv Grotesk Corp"],
     },
     extend: {
       spacing: {
@@ -62,9 +56,6 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
-      },
-      backgroundImage: {
-        hero: "url('../images/house.jpg')",
       },
     },
   },
