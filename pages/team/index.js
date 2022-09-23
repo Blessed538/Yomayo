@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import simi from "../../images/simi.svg";
 import ceo from "../../images/ceo.svg";
-const Team = () => {
+const Team = (props) => {
+  const { teams } = props;
   return (
     <div className="bg-bg-team">
       <div className="mx-auto my-0 sm:max-w-[90%] lg:py-12 lg:px-7">
@@ -13,20 +14,36 @@ const Team = () => {
           </h3>
         </div>
         <div className="grid sm:gap-4 grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  sm:pt-5 pb-5 mt-4">
-          <div className="grid">
-            <Image
-              src={ceo}
-              // layout="responsive"
-              className="bg-blue bg-cover  inline bg-center bg-no-repeat"
-            />
-            <div className=" font-light text-team-member-title text-2xl sm:text-xl">
-              DANIEL JUSTICE
-            </div>
-            <p className="font-aktiv font-light text-team-member-title text-3xl italic text-sm">
-              Founder/ Ceo
-            </p>
-          </div>
-          <div className="grid">
+          {teams.map((team, index) => {
+            return (
+              <>
+                <div className="">
+                  <div
+                    className="relative bg-blue bg-center bg-cover min-h-max h-ful"
+                    // style={{ minHeight: "443px", height: "443px" }}
+                  >
+                    <Image
+                      src={"https:" + team.fields.file.url}
+                      width={team.fields.file.details.image.width}
+                      height={team.fields.file.details.image.height}
+                      layout="responsive"
+                      objectFit="cover"
+                      // className="bg-blue bg-center bg-cover min-h-max h-full"
+                    />
+                  </div>
+
+                  <div className=" font-light text-team-member-title text-2xl sm:text-xl">
+                    {team.fields.title}
+                  </div>
+                  <p className="font-aktiv font-light text-team-member-title italic text-sm">
+                    {team.fields.description}
+                  </p>
+                </div>
+              </>
+            );
+          })}
+
+          {/* <div className="grid">
             <Image
               src={simi}
               // layout="responsive"
@@ -38,8 +55,8 @@ const Team = () => {
             <p className="font-aktiv font-light text-team-member-title text-xl italic text-sm">
               Principal Partner
             </p>
-          </div>
-          <div className="grid">
+          </div> */}
+          {/* <div className="grid">
             <Image
               src={ceo}
               // layout="responsive"
@@ -51,8 +68,8 @@ const Team = () => {
             <p className="font-aktiv font-light text-team-member-title text-xl italic text-sm">
               Team Lead/ Architect
             </p>
-          </div>
-          <div className="grid">
+          </div> */}
+          {/* <div className="grid">
             <Image
               // layout="responsive"
               src={ceo}
@@ -64,7 +81,7 @@ const Team = () => {
             <p className="font-aktiv font-light text-team-member-title  sm:text-xl italic text-sm">
               Team Lead/ Civil Engineering
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

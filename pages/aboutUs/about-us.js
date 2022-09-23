@@ -2,13 +2,15 @@ import React from "react";
 import Image from "next/image";
 import architecture from "../../images/architecture.svg";
 
-const About = () => {
+const About = (props) => {
+  const { item } = props;
+
   return (
     <div className="bg-about-us">
       <div className="grid gap-x-3 grid-cols-1  lg:grid-cols-2 mx-auto my-auto items-center max-w-[90%]">
         <div className="md:block hidden">
           <Image
-            src={architecture}
+            src={"https:" + item.fields.file.url}
             width={100}
             height={100}
             layout="responsive"

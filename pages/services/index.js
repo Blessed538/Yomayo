@@ -2,7 +2,8 @@ import React from "react";
 import home from "../../images/home.svg";
 import Image from "next/image";
 
-const Services = () => {
+const Services = (props) => {
+  const { service } = props;
   return (
     <div className="bg-bg-services">
       <div className="md:max-w-[90%] mx-auto w-full px-6 py-12">
@@ -17,43 +18,26 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  pt-5 md:gap-3">
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
-              Architecture
-            </div>
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
-              Architecture
-            </div>
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4  text-center">
-              Architecture
-            </div>
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
-              Architecture
-            </div>
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
-              Architecture
-            </div>
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-            <div className="text-white font-aktiv relative -top-10 bg-service-header p-4  text-center">
-              Architecture
-            </div>
-          </div>
+        <div className="lg:pl-32 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  pt-5 md:gap-3">
+          {service.map((item, index) => {
+            return (
+              <div className="relative">
+                <>
+                  <Image
+                    className="bg-cover bg-center"
+                    alt="arch"
+                    width={item.fields.file.details.image.width}
+                    height={item.fields.file.details.image.height}
+                    layout="responsive"
+                    src={"https:" + item.fields.file.url}
+                  />
+                  <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
+                    {item.fields.title}
+                  </div>
+                </>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

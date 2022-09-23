@@ -5,8 +5,6 @@ import Image from "next/image";
 
 const index = (props) => {
   const { item } = props;
-  console.log("HOMEITEM", item);
-
   return (
     <div>
       <div className="w-full max-w-full">
@@ -22,14 +20,14 @@ const index = (props) => {
               </div>
             </div>
             <div className="flex pt-28 flex-col justify-center">
-              <div className="sm:text-6xl  lg:text-8xl xl:text-8xl  text-6xl font-semibold lg:mx-auto text-link font-aktiv">
+              <div className="sm:text-6xl  lg:text-6xl xl:text-7xl xl:max-w-[60%]  text-6xl font-semibold text-link font-aktiv">
                 Architects that design the future
               </div>
               <p className="text-sub-text sm:text-2xl text-lgfont-light not-italic mt-2 font-aktiv mb-3">
                 As an award wining architectural firm ,we have designed many
                 beautiful buildings across Africa
               </p>
-              <div className="text-center mt-4 max-w-[50%] bg-btn-bg p-4 text-white">
+              <div className="text-center mt-4 sm:max-w-[35%] bg-btn-bg p-4 mb-5 text-white">
                 Contact Us
               </div>
             </div>

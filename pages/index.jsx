@@ -11,8 +11,8 @@ import Footer from "./footer";
 const contentful = require("contentful");
 
 function Home({ resources }) {
-  const { items, includes } = resources;
-  console.log("ITEMS", items);
+  const { items } = resources;
+  const [fields] = items;
 
   return (
     <div>
@@ -29,11 +29,13 @@ function Home({ resources }) {
         {items.map((item, index) => (
           <HomePage item={item} />
         ))}
+        {fields.fields.aboutUs.map((item, index) => (
+          <About item={item} />
+        ))}
+        <Services service={fields.fields.services} />
 
-        <About />
-        <Services />
-        <Projects />
-        <Team />
+        <Projects projects={fields.fields.projects} />
+        <Team teams={fields.fields.teams} />
         <Footer />
       </main>
     </div>
@@ -49,6 +51,7 @@ export async function getStaticProps() {
   const res = ClientContentful.getEntries({
     content_type: "yomayo",
   });
+  // construct response here
   const resources = await res;
 
   return {

@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import home from "../../images/home.svg";
 
-const Projects = () => {
+const Projects = (props) => {
+  const { projects } = props;
+
   return (
     <div className="bg-bg-projects w-screen">
       <div className="sm:max-w-[90%] mx-auto my-0 py-5">
@@ -23,24 +25,22 @@ const Projects = () => {
           </button>
         </div> */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-5 pb-5 mb-5 gap-4">
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
-          <div>
-            <Image className="bg-cover bg-center" alt="arch" src={home} />
-          </div>
+          {projects.map((item, index) => {
+            return (
+              <div className="relative">
+                <>
+                  <Image
+                    className="bg-cover bg-center"
+                    alt="arch"
+                    width={item.fields.file.details.image.width}
+                    height={item.fields.file.details.image.height}
+                    layout="responsive"
+                    src={"https:" + item.fields.file.url}
+                  />
+                </>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
