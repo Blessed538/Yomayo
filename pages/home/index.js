@@ -44,8 +44,9 @@ const index = (props) => {
               Our Clients
             </div>
             <div className="md:w-[90%] flex items-center justify-between">
-              {item.fields.companyLogos.map((logo) => (
+              {item.fields.companyLogos.map((logo, index) => (
                 <Image
+                  key={index}
                   src={"https:" + logo.fields.file.url}
                   width={90}
                   height={100}

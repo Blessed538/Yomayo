@@ -13,6 +13,7 @@ const About = (props) => {
             src={"https:" + item.fields.file.url}
             width={100}
             height={100}
+            alt="about-us"
             layout="responsive"
           />
         </div>

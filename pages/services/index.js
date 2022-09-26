@@ -21,7 +21,7 @@ const Services = (props) => {
         <div className="lg:pl-32 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  pt-5 md:gap-3">
           {service.map((item, index) => {
             return (
-              <div className="relative">
+              <div key={index} className="relative">
                 <>
                   <Image
                     className="bg-cover bg-center"

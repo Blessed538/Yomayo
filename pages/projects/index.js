@@ -19,15 +19,10 @@ const Projects = (props) => {
             building sustainability.
           </div>
         </div>
-        {/* <div className="flex md:pl-5  md:pl-5 pl-0 items-start mb-5 pt-5">
-          <button className="bg-view-all text-white p-4 md:p-3">
-            View All
-          </button>
-        </div> */}
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-5 pb-5 mb-5 gap-4">
           {projects.map((item, index) => {
             return (
-              <div className="relative">
+              <div key={index} className="relative">
                 <>
                   <Image
                     className="bg-cover bg-center"
