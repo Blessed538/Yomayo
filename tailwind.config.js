@@ -28,7 +28,7 @@ module.exports = {
       "gray-dark": "#273444",
       gray: "#8492a6",
       "gray-light": "#d3dce6",
-      "company-logo": "#F3F7FE",
+      "company-logo": "rgba(119, 172, 252, 0.8)",
       "bg-about": "#FAFEF8",
       "about-p": "#555555",
       "counter-color": "#111111",
@@ -40,6 +40,7 @@ module.exports = {
       "text-team": "#181818",
       "team-member-title": "#000000",
       "bg-footer": "#242424;",
+      "our-client": "#1C2977",
     },
     content: {
       section: {},
@@ -56,6 +57,9 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      backgroundImage: {
+        hero: "url('../images/hero.png')",
       },
     },
   },

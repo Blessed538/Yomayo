@@ -36,7 +36,7 @@ function Home({ resources }) {
 
         <Projects projects={fields.fields.projects} />
         <Team teams={fields.fields.teams} />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );
