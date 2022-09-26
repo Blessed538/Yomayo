@@ -26,16 +26,16 @@ function Home({ resources }) {
       </Head>
 
       <main>
-        {items.map(
-          (item, index) => item && <HomePage key={index} item={item} />
-        )}
-        {fields.fields.aboutUs.map(
-          (item, index) => item && <About key={index} item={item} />
-        )}
-        <Services service={fields && fields.fields.services} />
+        {items.map((item, index) => (
+          <HomePage key={index} item={item} />
+        ))}
+        {fields.fields.aboutUs.map((item, index) => (
+          <About key={index} item={item} />
+        ))}
+        <Services service={fields.fields.services} />
 
         <Projects projects={fields.fields.projects} />
-        <Team teams={fields && fields.fields.teams} />
+        <Team teams={fields.fields.teams} />
       </main>
     </div>
   );
@@ -43,13 +43,14 @@ function Home({ resources }) {
 
 export async function getStaticProps() {
   const ClientContentful = contentful.createClient({
-    space: "sjwpoajwjci7",
-    accessToken: "ZqZa7Blq2ZTZ3zuX4BJIPpSOI9p_Tvh4wniIs4ZvI_U",
+    space: process.env.space,
+    accessToken: process.env.accessToken,
   });
 
   const res = ClientContentful.getEntries({
     content_type: "yomayo",
   });
+
   const resources = await res;
 
   return {

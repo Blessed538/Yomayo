@@ -2,14 +2,9 @@ module.exports = {
   images: {
     domains: ["images.ctfassets.net"],
   },
-  // serverRuntimeConfig: {
-  //   // Will only be available on the server side
-  //   mySecret: 'secret',
-  //   secondSecret: process.env.SECOND_SECRET, // Pass through env variables
-  // },
-  publicRuntimeConfig: {
-    // Will be available on both server and client
-    staticFolder: "/static",
-    access: process.env.CSPACE,
+  env: {
+    GREETING: "Hello World",
+    space: "sjwpoajwjci7",
+    accessToken: "ZqZa7Blq2ZTZ3zuX4BJIPpSOI9p_Tvh4wniIs4ZvI_U",
   },
 };
