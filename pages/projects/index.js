@@ -20,7 +20,7 @@ const Projects = (props) => {
           </div>
         </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-5 pb-5 mb-5 gap-4">
-          {projects.map((item, index) => {
+          {projects?.map((item, index) => {
             return (
               <div key={index} className="relative group">
                 <>

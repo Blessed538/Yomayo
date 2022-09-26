@@ -26,10 +26,10 @@ function Home({ resources }) {
       </Head>
 
       <main>
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <HomePage key={index} item={item} />
         ))}
-        {fields.fields.aboutUs.map((item, index) => (
+        {fields.fields.aboutUs?.map((item, index) => (
           <About key={index} item={item} />
         ))}
         <Services service={fields.fields.services} />

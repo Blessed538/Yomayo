@@ -13,7 +13,7 @@ const Team = (props) => {
           </h3>
         </div>
         <div className="grid sm:gap-4 grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  sm:pt-5 pb-5 mt-4">
-          {teams.map((team, index) => {
+          {teams?.map((team, index) => {
             return (
               <>
                 <div className="">
