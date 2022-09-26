@@ -13,9 +13,17 @@ const index = (props) => {
               <div className="text-link font-aktiv text-2xl">
                 BayomAssociate
               </div>
-              <div className="items-center flex">
+              <div className="hidden sm:items-center sm:flex">
                 <div className="text-link font-aktiv mr-3 text-base">Home</div>
                 <div className="text-link font-aktiv text-base">Works</div>
+              </div>
+              <div className="sm:hidden  sm:items-center">
+                <button
+                  id="toggle-sidebar"
+                  class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                >
+                  Toggle Sidebar
+                </button>
               </div>
             </div>
             <div className="flex pt-28 flex-col sm:max-w-[70%] lg:max-w-[45%]">
