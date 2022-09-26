@@ -26,16 +26,16 @@ function Home({ resources }) {
       </Head>
 
       <main>
-        {items.map((item, index) => (
-          <HomePage key={index} item={item} />
-        ))}
-        {fields.fields.aboutUs.map((item, index) => (
-          <About key={index} item={item} />
-        ))}
-        <Services service={fields.fields.services} />
+        {items.map(
+          (item, index) => item && <HomePage key={index} item={item} />
+        )}
+        {fields.fields.aboutUs.map(
+          (item, index) => item && <About key={index} item={item} />
+        )}
+        <Services service={fields && fields.fields.services} />
 
         <Projects projects={fields.fields.projects} />
-        <Team teams={fields.fields.teams} />
+        <Team teams={fields && fields.fields.teams} />
       </main>
     </div>
   );
