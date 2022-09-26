@@ -19,7 +19,7 @@ const Services = (props) => {
           </div>
         </div>
         <div className="lg:pl-32 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  pt-5 md:gap-3">
-          {service.map((item, index) => {
+          {service?.map((item, index) => {
             return (
               <div key={index} className="relative">
                 <>

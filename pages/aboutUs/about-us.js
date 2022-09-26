@@ -10,7 +10,7 @@ const About = (props) => {
       <div className="grid gap-x-3 grid-cols-1  lg:grid-cols-2 mx-auto my-auto items-center max-w-[90%]">
         <div className="md:block hidden">
           <Image
-            src={"https:" + item.fields.file.url}
+            src={"https:" + item?.fields.file.url}
             width={100}
             height={100}
             alt="about-us"

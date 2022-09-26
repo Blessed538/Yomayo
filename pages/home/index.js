@@ -36,7 +36,7 @@ const index = (props) => {
               Our Clients
             </div>
             <div className="md:w-[90%] flex items-center justify-between">
-              {item.fields.companyLogos.map((logo, index) => (
+              {item?.fields.companyLogos.map((logo, index) => (
                 <Image
                   key={index}
                   alt="home page"

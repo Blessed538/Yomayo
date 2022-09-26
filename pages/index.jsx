@@ -29,13 +29,13 @@ function Home({ resources }) {
         {items?.map((item, index) => (
           <HomePage key={index} item={item} />
         ))}
-        {fields.fields.aboutUs?.map((item, index) => (
+        {fields?.fields?.aboutUs?.map((item, index) => (
           <About key={index} item={item} />
         ))}
-        <Services service={fields.fields.services} />
+        <Services service={fields?.fields?.services} />
 
         <Projects projects={fields.fields.projects} />
-        <Team teams={fields.fields.teams} />
+        <Team teams={fields?.fields?.teams} />
       </main>
     </div>
   );
