@@ -41,6 +41,8 @@ module.exports = {
       "team-member-title": "#000000",
       "bg-footer": "#242424;",
       "our-client": "#1C2977",
+      "project-hover":
+        "linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56))",
     },
     content: {
       section: {},
@@ -50,6 +52,7 @@ module.exports = {
       aktiv: ["Aktiv Grotesk Corp"],
     },
     extend: {
+      display: ["group-hover"],
       spacing: {
         128: "32rem",
         144: "36rem",
