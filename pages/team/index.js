@@ -27,6 +27,7 @@ const Team = (props) => {
                       height={team.fields.file.details.image.height}
                       layout="responsive"
                       objectFit="cover"
+                      alt="team page"
                     />
                   </div>
 

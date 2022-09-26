@@ -22,16 +22,24 @@ const Projects = (props) => {
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-5 pb-5 mb-5 gap-4">
           {projects.map((item, index) => {
             return (
-              <div key={index} className="relative">
+              <div key={index} className="relative group">
                 <>
                   <Image
-                    className="bg-cover bg-center"
+                    className="bg-cover bg-center hover:scale-150 hover:bg-project-hover  ease-in duration-500 "
                     alt="arch"
                     width={item.fields.file.details.image.width}
                     height={item.fields.file.details.image.height}
                     layout="responsive"
                     src={"https:" + item.fields.file.url}
                   />
+                  <div className="hidden group-hover:absolute group-hover:bottom-4  group-hover:left-4 group-hover:block">
+                    <div className="text-white font-aktiv not-italic text-lg">
+                      {item.fields.title}
+                    </div>
+                    <div className="text-white font-aktiv not-italic text-base">
+                      {item.fields.description}
+                    </div>
+                  </div>
                 </>
               </div>
             );

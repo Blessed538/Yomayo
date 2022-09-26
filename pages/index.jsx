@@ -50,7 +50,6 @@ export async function getStaticProps() {
   const res = ClientContentful.getEntries({
     content_type: "yomayo",
   });
-  // construct response here
   const resources = await res;
 
   return {
