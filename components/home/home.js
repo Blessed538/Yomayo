@@ -7,7 +7,7 @@ const index = (props) => {
   return (
     <div>
       <div className="w-full max-w-full">
-        <div className="grid grid-cols-1 sm:bg-hero">
+        <div className="grid grid-cols-1 sm:bg-hero" data-testid="background">
           <div className="md:px-12 px-6 pt-3 lg:pt-6">
             <div className="flex justify-between pt-5 items-center">
               <div className="text-link font-aktiv text-2xl">
