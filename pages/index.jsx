@@ -43,12 +43,12 @@ function Home({ resources }) {
 
 export async function getStaticProps() {
   const ClientContentful = contentful.createClient({
-    space: "sjwpoajwjci7",
-    accessToken: "ZqZa7Blq2ZTZ3zuX4BJIPpSOI9p_Tvh4wniIs4ZvI_U",
+    space: process.env.space,
+    accessToken: process.env.accessToken,
   });
 
   const res = ClientContentful.getEntries({
-    content_type: "yomayo",
+    content_type: process.env.content_type,
   });
 
   const resources = await res;
