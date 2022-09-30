@@ -8,7 +8,7 @@ const About = (props) => {
   return (
     <div className="bg-about-us">
       <div
-        className="grid lg:gap-x-3 grid-cols-1 lg:grid-cols-2 mx-auto  w-[80%] pt-8
+        className="grid lg:gap-x-3 grid-cols-1 lg:grid-cols-2 mx-auto  sm:w-[80%] pt-8
                    lg:max-w-[976px] lg:w-[100%] md:max-w-[768px] md:w-[80%] xl:max-w-[1440px] xl:w-[80%] "
       >
         <div className="md:block ">
@@ -38,26 +38,26 @@ const About = (props) => {
           </p>
           <div className="flex justify-between items-center mt-5">
             <div className="font-aktiv">
-              <div className="text-[40px] leading-[auto] font-bold text-counter-color mb-1">
+              <div className="md:text-[40px] leading-[auto] font-bold text-counter-color mb-1">
                 001+
               </div>
-              <p className="font-ortica font-light  about-p not-italic text-[18px]">
+              <p className="font-ortica font-light  about-p not-italic md:text-[18px]">
                 Projects
               </p>
             </div>
             <div className="font-aktiv">
-              <div className="text-[40px] leading-[auto] font-bold  text-counter-color mb-1">
+              <div className="md:text-[40px] leading-[auto] font-bold  text-counter-color mb-1">
                 01
               </div>
-              <p className="font-ortica font-light about-p not-italic text-[18px]">
+              <p className="font-ortica font-light about-p not-italic md:text-[18px]">
                 Years of Experience
               </p>
             </div>
             <div className="font-aktiv">
-              <div className="text-[40px] leading-[auto] font-bold text-counter-color mb-1">
+              <div className="md:text-[40px] leading-[auto] font-bold text-counter-color mb-1">
                 01+
               </div>
-              <p className="font-ortica font-light about-p not-italic text-[18px]">
+              <p className="font-ortica font-light about-p not-italic md:text-[18px]">
                 Professional Teams
               </p>
             </div>
@@ -66,7 +66,7 @@ const About = (props) => {
             <div className="pb-10 font-aktiv text-view-all pt-10 font-medium not-italic text-[32px] leading-[37px]">
               Our Clients
             </div>
-            <div className="grid grid-cols-4  gap-12 max-w-[700px] w-[70%]">
+            <div className="grid grid-cols-4  gap-12 lg:max-w-[700px] lg:w-[70%]">
               {fields?.fields?.companyLogos?.map((logo, index) => (
                 <Image
                   key={index}
