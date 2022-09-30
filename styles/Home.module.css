@@ -11,119 +11,71 @@
   justify-content: center;
   align-items: center;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+*/
+.clip {
+    /* add bottom border */
+    padding:0 20px 20px 0;
+    background:linear-gradient(blue 20 20);
+    background:linear-gradient(blue 0 0) 100% 100% / 80% 80% no-repeat;
+    /* cut top corner */
+    clip-path:polygon(30% 0,100% 0,100% 100%,0 100%,0 30%);
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.container {
+  position: relative;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.container::before {
+  content: "";
+  background: #1C2977;
+  color: red;
+  height: 2rem;
+  width: 60%;
+  left: -2rem;
+  top: 1.3rem;
+  position: absolute;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.container::after {
+  content: "";
+  background: #1C2977;
+  width: 2rem;
+  height: 50vh;
+  top: 3rem;
+  left: -2rem;
+  position: absolute;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu ortica Mono,
-    Bitstream Vera ortica Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media screen and (max-width: 976px) {
+  .container::after {
+    content: "";
+    background: #1C2977;
+    width: 2rem;
+    top: 3rem;
+    left: -2rem;
+    position: absolute;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+@media screen and (max-width: 768px) {
+  .container::after {
+    content: "";
+    background: #1C2977;
+    width: 2rem;
+    top: 0rem;
+    height: 30vh;
+    left: -2rem;
+    position: absolute;
   }
-  .code {
-    background: #111;
+  .container::before {
+    content: "";
+    background: #1C2977;
+    height: 2rem;
+    width: 60%;
+    left: -2rem;
+    top: 0rem;
+    position: absolute;
   }
-  .logo img {
-    filter: invert(1);
-  }
-} */
+}
+
+

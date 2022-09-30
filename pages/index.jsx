@@ -30,7 +30,7 @@ function Home({ resources }) {
           <HomePage key={index} item={item} />
         ))}
         {fields?.fields?.aboutUs?.map((item, index) => (
-          <About key={index} item={item} />
+          <About key={index} item={item} fields={fields} />
         ))}
         <Services service={fields?.fields?.services} />
 

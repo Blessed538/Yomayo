@@ -6,7 +6,7 @@ const Services = (props) => {
   const { service } = props;
   return (
     <div className="bg-bg-services">
-      <div className="md:max-w-[90%] mx-auto w-full px-6 py-12">
+      <div className="md:max-w-[90%] mx-auto w-full px-6 md:pb-12 pt-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 mb-5">
           <div className="font-light text-counter-color not-italic text-4xl font-aktiv">
             Our Services
@@ -31,7 +31,7 @@ const Services = (props) => {
                     layout="responsive"
                     src={"https:" + item.fields.file.url}
                   />
-                  <div className="text-white font-aktiv relative -top-10 bg-service-header p-4 text-center">
+                  <div className="text-white font-aktiv relative -top-10 text-[24.496px] font-medium leading-[31px] not-italic bg-service-header p-3 text-center">
                     {item.fields.title}
                   </div>
                 </>

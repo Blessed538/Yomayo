@@ -4,10 +4,12 @@
 
 @font-face {
     font-family: "Aktiv Grotesk Corp";
-    src: url("../public/AktivGroteskCorp-Light.ttf")
+    src: url("../public/AktivGrotesk-Light.ttf")
+    
+    
   }
 
   @font-face {
     font-family: "Ortica";
-    src: url("../public/Sneaky-Times.otf")
+    src: url("../public/Ortica-Light.otf")
   }

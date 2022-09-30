@@ -1,53 +1,81 @@
 import React from "react";
 import Image from "next/image";
 import architecture from "../../images/architecture.svg";
-
+import styles from "../../styles/Home.module.css";
 const About = (props) => {
-  const { item } = props;
+  const { item, fields } = props;
 
   return (
     <div className="bg-about-us">
-      <div className="grid gap-x-3 grid-cols-1  lg:grid-cols-2 mx-auto my-auto items-center max-w-[90%]">
-        <div className="md:block hidden">
-          <Image
-            src={"https:" + item?.fields.file.url}
-            width={100}
-            height={100}
-            alt="about-us"
-            layout="responsive"
-          />
+      <div
+        className="grid lg:gap-x-3 grid-cols-1 lg:grid-cols-2 mx-auto  w-[80%] pt-8
+                   lg:max-w-[976px] lg:w-[100%] md:max-w-[768px] md:w-[80%] xl:max-w-[1440px] xl:w-[80%] "
+      >
+        <div className="md:block ">
+          <div className={styles.container}>
+            <Image
+              src={"https:" + item?.fields.file.url}
+              width={100}
+              height={100}
+              alt="about-us"
+              layout="responsive"
+              className="md:bg-contain"
+            />
+          </div>
         </div>
-        <div className="flex flex-col lg:pl-8 py-7">
-          <div className="text-link font-aktiv lg:text-left text-center not-italic md:text-4xl">
+        <div className="lg:pl-8 py-7">
+          <div className="text-link font-aktiv  font-medium  not-italic md:text-2xl">
             About Us
           </div>
-          <div className="text-link mb-3 lg:text-left text-center my-5 font-aktiv not-italic text-2xl">
+          <div className="mb-2 text-counter-color font-ortica  text-[40px] not-italic">
             BayomAssociate
           </div>
-          <p className="text-about-p not-italic font-aktiv sm:text-2xl sm:mb-3">
+          <p className="text-about-p font-light text-[20px] not-italic font-aktiv sm:mb-3">
             BayomAssociates is an architectural and engineering firm based in
             Abuja, Nigeria established in 1993 . We are dedicated team of
-            Architects, Quantity Surveyors, Structural & Civil engineers who
-            genuinely care about your project{" "}
+            Architects, Quantity Surveyors,Structural & Civil engineers who
+            genuinely care about your project
           </p>
           <div className="flex justify-between items-center mt-5">
             <div className="font-aktiv">
-              <div className="sm:text-4xl text-sm text-counter-color mb-1">
+              <div className="text-[40px] leading-[auto] font-bold text-counter-color mb-1">
                 001+
               </div>
-              <p className="font-ortica text-sm about-p not-italic">Projects</p>
+              <p className="font-ortica font-light  about-p not-italic text-[18px]">
+                Projects
+              </p>
             </div>
             <div className="font-aktiv">
-              <div className="sm:text-4xl text-counter-color mb-1">01</div>
-              <p className="font-ortica about-p not-italic sm:text-lg">
+              <div className="text-[40px] leading-[auto] font-bold  text-counter-color mb-1">
+                01
+              </div>
+              <p className="font-ortica font-light about-p not-italic text-[18px]">
                 Years of Experience
               </p>
             </div>
             <div className="font-aktiv">
-              <div className="sm:text-4xl text-counter-color mb-1">01+</div>
-              <p className="font-ortica about-p not-italic sm:text-lg">
+              <div className="text-[40px] leading-[auto] font-bold text-counter-color mb-1">
+                01+
+              </div>
+              <p className="font-ortica font-light about-p not-italic text-[18px]">
                 Professional Teams
               </p>
+            </div>
+          </div>
+          <div className="pt-7 ">
+            <div className="pb-10 font-aktiv text-view-all pt-10 font-medium not-italic text-[32px] leading-[37px]">
+              Our Clients
+            </div>
+            <div className="grid grid-cols-4  gap-12 max-w-[700px] w-[70%]">
+              {fields?.fields?.companyLogos?.map((logo, index) => (
+                <Image
+                  key={index}
+                  alt="clients logo"
+                  src={"https:" + logo.fields.file.url}
+                  width="100%"
+                  height="100%"
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -55,5 +83,4 @@ const About = (props) => {
     </div>
   );
 };
-
 export default About;

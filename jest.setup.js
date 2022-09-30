@@ -1,7 +1,9 @@
 // jest.setup.ts
+import { loadEnvConfig } from "@next/env";
 import "@testing-library/jest-dom";
 import "@testing-library/jest-dom/extend-expect";
 
-import { loadEnvConfig } from "@next/env";
-
-loadEnvConfig(process.cwd());
+export default async () => {
+  const projectDir = process.cwd();
+  loadEnvConfig(projectDir);
+};
