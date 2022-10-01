@@ -8,7 +8,7 @@ const index = (props) => {
     <div>
       <div className="w-full max-w-full">
         <div
-          className="grid grid-cols-1 lg:bg-hero lg:bg-cover md:bg-contain bg-left-top bg-no-repeat"
+          className="grid grid-cols-1 lg:bg-hero lg:bg-cover  md:bg-contain bg-left-top bg-no-repeat"
           data-testid="background"
         >
           <div className="md:px-12 px-6 pt-3 lg:pb-40 ">
@@ -17,7 +17,7 @@ const index = (props) => {
                 BayomAssociates
               </div>
               <div className="items-center flex">
-                <div className="text-link font-extrabold mr-3 text-base">
+                <div className="text-link font-bold font-aktiv mr-3 text-base">
                   Home
                 </div>
                 <div className="text-link font-aktiv  text-base">Works</div>

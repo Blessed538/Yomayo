@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xs: "380px",
+      xs: "300px",
       sm: "480px",
       md: "768px",
       lg: "976px",
@@ -64,6 +64,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('../images/hero.png')",
+        hero2: "url('../images/hero2.png')",
       },
     },
   },

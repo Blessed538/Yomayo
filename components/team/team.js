@@ -15,7 +15,7 @@ const Team = (props) => {
       <div className="mx-auto my-0 sm:max-w-[90%] w-[90%] lg:py-12 lg:px-7">
         <div className="sm:flex sm:items-start">
           <h3 className="text-text-team font-ortica mt-3 text-[48px] font-light">
-            The Dream Team
+            Meet Our Team
           </h3>
         </div>
         <div className="grid sm:gap-4 grid-cols-1 lg:grid-cols-4  sm:pt-5 pb-5 mt-4">

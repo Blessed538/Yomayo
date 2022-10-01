@@ -8,10 +8,10 @@ const About = (props) => {
   return (
     <div className="bg-about-us">
       <div
-        className="grid lg:gap-x-3 grid-cols-1 lg:grid-cols-2 mx-auto w-[90%] sm:w-[80%] pt-8
+        className="grid lg:gap-x-3 grid-cols-1 lg:grid-cols-2 mx-auto w-[90%]  pt-8
                    lg:max-w-[976px] lg:w-[100%] md:max-w-[768px] md:w-[80%] xl:max-w-[1440px] xl:w-[80%] "
       >
-        <div className="md:block ">
+        <div className="xs:pl-7 sm:pl-5 md:pl-0">
           <div className={styles.container}>
             <Image
               src={"https:" + item?.fields.file.url}

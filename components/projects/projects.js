@@ -7,12 +7,12 @@ const Projects = (props) => {
 
   return (
     <div className="bg-bg-projects w-screen">
-      <div className="sm:max-w-[90%] w-[90%] mx-auto py-5">
-        <div className="flex items-center md:flex-row sm:flex-col flex-col md:justify-between pl-0 md:pl-5  w-full">
-          <div className="text-[48px] font-ortica md:w-[45%] w-[100%] font-light text-white not-italic">
+      <div className="sm:max-w-[90%] w-[90%] mx-auto  py-12">
+        <div className="grid md:grid-cols-2 md:mb-8 mb-5 grid-cols-1">
+          <div className="text-[48px] font-ortica font-light text-white not-italic">
             Selected Projects
           </div>
-          <div className="font-light md:w-10/12 w-[100%] py-4 text-background leading-[39px] text-[24px] font-aktiv md:text-lg">
+          <div className="font-light  py-4 text-background leading-[29px] text-[18px] font-aktiv">
             With over 28years of delivering excellence,we carry out our projects
             with a clear intent of captilazing upon the unique nature of the
             diiferent sites while respecting the character of the land and
